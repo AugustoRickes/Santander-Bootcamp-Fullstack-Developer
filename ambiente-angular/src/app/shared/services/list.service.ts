@@ -12,7 +12,7 @@ export class ListService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getList():Observable<any> {
+  getList(): Observable<any> {
     return this.httpClient.get<any>(this.apiURL);
   }
 }
